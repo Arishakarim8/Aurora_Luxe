@@ -1,0 +1,52 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply full-height and proper width for the body and html */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif; /* Set a base font-family */
+}
+
+/* Ensure consistent styling for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Add container styling for the main content */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed for your design */
+  margin: 0 auto; /* Centers the container */
+  padding: 16px; /* Adds padding inside the container */
+}
+
+/* Example Header/Footer styling */
+header, footer {
+  width: 100%;
+  /* background-color: #f0f0f0; */
+  padding: 16px 0;
+  text-align: center;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+footer h3{
+   font-family: cursive;
+}
+footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px; 
+  /* font-family: cursive; */
+}
