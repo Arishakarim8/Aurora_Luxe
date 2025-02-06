@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 export default function MenuWithCut() {
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -30,24 +31,24 @@ export default function MenuWithCut() {
           {/* Menu Items */}
           <ul className="absolute text-nowrap list-none p-0 text-left w-52 h-96 flex flex-col justify-center items-start pl-20">
             <li className="my-2.5">
-              <a href="/" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
+              <Link to="/" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
                 Shop
-              </a>
+              </Link>
             </li>
             <li className="my-2.5">
-              <a href="/newin" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
+              <Link to="/newin" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
                 New Arrivals
-              </a>
+              </Link>
             </li>
             <li className="my-2.5">
-              <a href="/about" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
+              <Link to="/about" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
                 Discover
-              </a>
+              </Link>
             </li>
             <li className="my-2.5">
-              <a href="/contact" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
+              <Link to="/contact" className="text-white text-xl no-underline transition-colors duration-300 hover:text-[#d8b861]">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
